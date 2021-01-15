@@ -21,7 +21,7 @@ To install the KMFX scripts:
 
 #### Documentation for each script (wip)
 
-[kmfx_cycleRGB](https://github.com/katiemorrisfx/KMFX-scripts/docs/kmfx_cycleRGB.md) 
+[kmfx_cycleRGB](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cycleRGB.md) 
 
 
 #### Resources:
