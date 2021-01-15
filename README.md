@@ -21,7 +21,7 @@ To install the KMFX scripts:
 
 #### Documentation for each script (wip)
 
-[kmfx_cycleRGB](https://github.com/katiemorrisfx/KMFX-scripts/docs/r/kmfx_cycleRGB.md) 
+[kmfx_cycleRGB](https://github.com/katiemorrisfx/KMFX-scripts/docs/kmfx_cycleRGB.md) 
 
 
 #### Resources:
@@ -31,11 +31,9 @@ To install the KMFX scripts:
 - [Katie Morris FX website](https://www.katiemorrisfx.com)
 - [Magno Borgo website](http://www.borgo.tv)
 
-#### Contributing to the project
+#### Support Developer Team
 
-If you want to thanks or sponsor the project, donations are accepted:
-
-[paypal](https://www.paypal.com/paypalme/MBORGO)<br>
+If you want to thanks or sponsor the project: [Paypal](https://www.paypal.com/paypalme/MBORGO)<br>
 ```
 btc 3D1AFabS93fYeyH2NDjzo37GSRhd9DVfWa
 ltc LTT8Gj8nnwBCEGAcapjfLy9EyZtiu6Ntqh
