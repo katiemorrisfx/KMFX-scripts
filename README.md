@@ -19,6 +19,12 @@ To install the KMFX scripts:
 
 (insert details here)
 
+#### Documentation for each script
+
+
+
+
+
 #### Resources:
 - [SFX User Guide](https://cdn.borisfx.com/borisfx/store/silhouette/2020-5-7/Silhouette-2020.5.7-UserGuide.pdf)
 - [SFX Customization Guide](https://documentation.borisfx.com/wiki/sfx/index.php?title=Main_Page)
