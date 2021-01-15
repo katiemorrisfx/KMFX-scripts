@@ -35,8 +35,8 @@ To install the KMFX scripts:
 
 If you want to thanks or sponsor the project, donations are accepted:
 
-[paypal](https://www.paypal.com/paypalme/MBORGO)
-'''
+[paypal](https://www.paypal.com/paypalme/MBORGO)<br>
+```
 btc 3D1AFabS93fYeyH2NDjzo37GSRhd9DVfWa
 ltc LTT8Gj8nnwBCEGAcapjfLy9EyZtiu6Ntqh
-'''
+```
