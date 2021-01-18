@@ -37,8 +37,8 @@ fx.bind("Num+2", callMethod(fx.actions["KMFXpaintPresets"].execute,**{"mode":"lo
 fx.bind("v", callMethod(fx.actions["KMFXselectAllPointRebind"].execute))
 fx.bind("TAB", callMethod(fx.actions["KMFXcyclePaintPresets"].execute))
 
-fx.bind('1', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"increase"}))
-fx.bind('2', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"decrease"}))
+fx.bind('1', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"decrease"}))
+fx.bind('2', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"increase"}))
 
 
 
