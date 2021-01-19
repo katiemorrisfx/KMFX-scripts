@@ -4,13 +4,12 @@ This script allows you to select all of the points on a shape with a single hotk
 
 Steps:
 
-1. To select all of the points on a shape, select the shape, then click "v"
+1. To select all of the points on a shape(s), enter the Reshape tool and then press the keybind
 
-Note: The default hotkey for this was "alt/option+shift+a" and is now rebound to "v"
+Note: The default hotkey for this was "alt/option+shift+a" and is now rebind to the keybind.
 
 - Can be run from KMFX menu: YES
 - Can be run from keybind: YES
-
 
 ## Video Example
 Coming soon

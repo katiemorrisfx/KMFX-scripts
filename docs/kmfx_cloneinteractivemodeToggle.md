@@ -5,13 +5,13 @@ the Interactive button in the Clone tab window.
 
 Steps: 
 1. Press Caps Lock to enter the Onion Skin mode
-2. Press "i" to enable Interactive mode and the Interactive on-screen controls
+2. Press assigned keybind to enable Interactive mode and the Interactive on-screen controls
 3. Make adjustments
-4. Press "i" to leave Interactive mode and disable the Interactive on-screen controls
+4. Press assigned keybind to leave Interactive mode and disable the Interactive on-screen controls
 5. Press Caps Lock to diable Onion Skin mode
 6. Paint
 
-Note: While using the "i" hotkey, the Interactive button in the Clone tab window will not become highlighted
+Note: While using the assigned keybind, the Interactive button in the Clone tab window will not become highlighted
 
 - Can be run from KMFX menu: YES
 - Can be run from keybind: YES

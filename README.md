@@ -22,7 +22,16 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 #### Documentation for each script (wip)
 
-[kmfx_cycleRGB](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cycleRGB.md) 
+[kmfx_changepaintOpacity](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_changepaintOpacity.md) 
+[kmfx_cloneinteractivemodeToggle](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cloneinteractivemodeToggle.md) 
+[kmfx_cyclePaintPresets](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cyclePaintPresets.md) 
+[kmfx_cycleRGB](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cycleRGB.md)
+[kmfx_extrascriptspath](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_extrascriptspath.md) 
+[kmfx_hard_alpha](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_hard_alpha.md) 
+[kmfx_paintsubpixeloff](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintsubpixeloff.md) 
+[kmfx_resetcloneoverride](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_resetcloneoverride.md) 
+[kmfx_reshapeOverride](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_reshapeOverride.md)
+[kmfx_selectallpoints](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_selectallpoints.md)
 
 
 #### Resources:

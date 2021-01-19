@@ -1,11 +1,13 @@
 ## KMFX_reshapeOverride Documentation
 
-This script allows you to override the toggling of the Reshape tool with the Magnetic tool.  
+This script allows you to override the toggling of the Reshape tool with the Magnetic tool (avoiding entering on the Magnetic)  
+Magnetic mode will still be acessible but you need to click with the mouse on the toolbar.
 
 Steps:
 
 1. When pressing the "r" key in the Roto node it will no longer toggle between the Magnetic tool and will remain in the
 Reshape tool.
+
 
 - Can be run from KMFX menu: YES
 - Can be run from keybind: YES
@@ -19,10 +21,9 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 
 ## Sample Keybind Command
+
 ```
-#### start reshape override ####
 fx.unbind("r")
 fx.viewer.setToolBind("Reshape", "")
 fx.bind("r", callMethod(fx.actions["KMFXreshapeOverride"].execute))
-### end reshape override ####
 ```

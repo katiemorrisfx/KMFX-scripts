@@ -9,7 +9,6 @@ Steps:
 Note: One can still turn on Subpixel in the Clone Brush window. However, after turning it on, then clicking another node and then clicking
 back to the Paint node, Subpixel is subsequently disabled again.
 
-
 - Can be run from KMFX menu: NO
 - Can be run from keybind: NO
 
