@@ -9,6 +9,12 @@ Steps:
 possible presets that can be loaded in.
 
 Note: By default Presets are saved in folders named with the saved preset name in the "paint_presets" folder inside of KMFX scripts. 
+
+
+## Preferences
+
+(Silhouette > Preferences > KMFX)
+
 There is also an option to save the preset to a specified folder, inside of KMFX Preferences.
 
 You can share your presets with other users or move them to another computer, just copy the whole presets folder to the new location.

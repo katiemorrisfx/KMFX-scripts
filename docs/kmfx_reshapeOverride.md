@@ -1,7 +1,7 @@
 ## KMFX_reshapeOverride Documentation
 
-This script allows you to override the toggling of the Reshape tool with the Magnetic tool (avoiding entering on the Magnetic)  
-Magnetic mode will still be acessible but you need to click with the mouse on the toolbar.
+This script allows you to override the toggling of the Reshape tool with the Magnetic tool (avoiding entering on the Magnetic).  
+Magnetic mode will still be accessible, but you need to click with the mouse on the toolbar.
 
 Steps:
 

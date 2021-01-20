@@ -3,7 +3,7 @@
 This script allows you to have two more folder paths in the KMFX preferences as to enable the ability to have 
 multiple paths where external scripts can be called in from.
 
-You can edit the script to add additional paths, default is 2 extra paths
+You can edit the script to add additional paths, default is 2 extra paths.
 
 - Can be run from KMFX menu: NO
 - Can be run from keybind: NO

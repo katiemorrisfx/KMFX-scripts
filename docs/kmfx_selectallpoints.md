@@ -6,7 +6,7 @@ Steps:
 
 1. To select all of the points on a shape(s), enter the Reshape tool and then press the keybind
 
-Note: The default hotkey for this was "alt/option+shift+a" and is now rebind to the keybind.
+Note: The default hotkey for this was "alt/option+shift+a" and is now rebound to the keybind.
 
 - Can be run from KMFX menu: YES
 - Can be run from keybind: YES
