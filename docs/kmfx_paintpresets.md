@@ -15,6 +15,8 @@ Note: By default Presets are saved in folders named with the saved preset name i
 
 (Silhouette > Preferences > KMFX)
 
+Note: We are still tweaking the optional path feature, so stay tuned!
+
 There is also an option to save the preset to a specified folder, inside of KMFX Preferences.
 
 You can share your presets with other users or move them to another computer, just copy the whole presets folder to the new location.
