@@ -1,13 +1,14 @@
 ## KMFX_timeOffset Documentation
 
 This script allows you to offset keyframes if the length of your shot changes.  This works with the
-Roto node, keyframeable attributes inside the Roto node, such as Blur, and other nodes that have keyframes with exception of the Paint node.
+Roto node, keyframeable attributes inside the Roto node, such as Blur, and other nodes that have keyframes with exception of the Paint node paint strokes.
+
 
 Steps: One of two methods, and the example here is if 10 frames have been added to the head 
 1. Load in new footage into your Silhouette Project
 2. Make a new Session with the new footage, it will reflect the new startframe and new length
 3. Copy the original roto node in the original Session and copy it into your new Session and attach it to your new footage
-4. Press the hotkey on the keyboard or the numeric keypad, and a gui pops up
+4. Select the node and press the hotkey on the keyboard or the numeric keypad, and a gui pops up
 5. Change the "Frames to offset" amount to 10, and the "Direction" pulldown to Tail
 6. Your keyframes will be moved to the correct location automatically
 

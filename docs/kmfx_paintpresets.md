@@ -8,11 +8,12 @@ Steps:
 3. To load in saved presets, press "2" on the numeric keypad to bring up the gui that has the List of
 possible presets that can be loaded in.
 
-Note: Presets are saved in folders named with the saved preset name in the "paint_presets" folder inside of KMFX scripts. 
-There is also an option to save a preset to a specified folder, inside of KMFX Preferences.
+Note: By default Presets are saved in folders named with the saved preset name in the "paint_presets" folder inside of KMFX scripts. 
+There is also an option to save the preset to a specified folder, inside of KMFX Preferences.
 
+You can share your presets with other users or move them to another computer, just copy the whole presets folder to the new location.
 
-- Can be run from KMFX menu: YES
+- Can be run from KMFX menu: No
 - Can be run from keybind: YES
 
 
