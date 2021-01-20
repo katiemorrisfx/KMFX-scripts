@@ -93,7 +93,19 @@ class KMFXpaintPresets(Action):
 	def execute(self,**kwargs):
 		# fx.beginUndo("KMFX Paint Presets") # undo is not working on this
 
+
 		paint_presets_path = fx.prefs["KMFX.Paint Presets Path"] if fx.prefs["KMFX.Paint Presets Path"]!= "" else os.environ["SFX_SCRIPT_PATH"] + "/KMscripts/paint_presets/"
+		
+		#### check if the custom pref path exists and warn user if its wrong
+		if paint_presets_path == fx.prefs["KMFX.Paint Presets Path"]:
+			if not os.path.exists(paint_presets_path):
+				displayError("The custom path '%s' could be wrong or\nwas not found or can't be read,\nplease check your KMFX preferences!\nFalling back to default path\n %s " % (paint_presets_path,os.environ["SFX_SCRIPT_PATH"] + "/KMscripts/paint_presets/"))
+				# print("The custom path '%s' could be wrong / was not found / can't be read, please check your preferences\n falling back to default path\n %s " % (paint_presets_path,os.environ["SFX_SCRIPT_PATH"] + "/KMscripts/paint_presets/"))
+				paint_presets_path = os.environ["SFX_SCRIPT_PATH"] + "/KMscripts/paint_presets/"
+
+
+
+
 		mode = kwargs["mode"] if "mode" in kwargs.keys() else "save"
 
 		node = activeNode()

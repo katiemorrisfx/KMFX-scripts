@@ -45,8 +45,7 @@ class KMFX_hard_Alpha(Action):
 				n2 = Node("com.digitalfilmtools.ofx.silhouette.colorCorrect")
 				activeSession().addNode(n2)
 				n2.port("input").connect(nn1.port("Output"))		
-				n2.property("brightness").setValue(100)
-				n2.property("contrast").setValue(100)
+				n2.property("gamma").setValue(100)
 				creatednodes.append(n2)
 				n2.setState('graph.pos', fx.Point3D(pos.x+150,pos.y+(50*(n+1))))
 				nn1 = n2
