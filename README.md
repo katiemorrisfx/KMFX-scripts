@@ -28,10 +28,13 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 [kmfx_cycleRGB](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cycleRGB.md)<br>
 [kmfx_extrascriptspath](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_extrascriptspath.md) <br>
 [kmfx_hard_alpha](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_hard_alpha.md) <br>
+[kmfx_keyframeVisibility](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_keyframeVisibility.md) <br>
+[kmfx_paintpresets](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintpresets.md) <br>
 [kmfx_paintsubpixeloff](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintsubpixeloff.md) <br>
 [kmfx_resetcloneoverride](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_resetcloneoverride.md) <br>
 [kmfx_reshapeOverride](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_reshapeOverride.md)<br>
 [kmfx_selectallpoints](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_selectallpoints.md)<br>
+[kmfx_timeOffset](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_timeOffset.md)<br>
 
 
 #### Resources:
@@ -43,7 +46,7 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 #### Support Developer Team
 
-If you want to thanks or sponsor the project: [Paypal](https://www.paypal.com/paypalme/MBORGO)<br>
+If you want to thank or sponsor the project: [Paypal](https://www.paypal.com/paypalme/MBORGO)<br>
 ```
 btc 3D1AFabS93fYeyH2NDjzo37GSRhd9DVfWa
 ltc LTT8Gj8nnwBCEGAcapjfLy9EyZtiu6Ntqh
