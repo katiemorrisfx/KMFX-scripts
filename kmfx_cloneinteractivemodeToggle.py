@@ -19,16 +19,16 @@ class KMFXcloneinteractivemodeToggle(Action):
 		print(clonemode)
 
 
-		# if fx.paint.onionSkin: #prevents entering interactive mode if onion skin is disabled
-		if clonemode == None:
-			fx.paint.setOnionSkin(True)
-			fx.paint.setTransformMode(True)
-			clonemode = True
+		if fx.paint.onionSkin: #prevents entering interactive mode if onion skin is disabled
+			if clonemode == None:
+				# fx.paint.setOnionSkin(True)
+				fx.paint.setTransformMode(True)
+				clonemode = True
 
-		else:
-			fx.paint.setTransformMode(False)
-			fx.paint.setOnionSkin(True)
-			clonemode = None
+			else:
+				fx.paint.setTransformMode(False)
+				# fx.paint.setOnionSkin(True)
+				clonemode = None
 		endUndo()	
 
 addAction(KMFXcloneinteractivemodeToggle())
