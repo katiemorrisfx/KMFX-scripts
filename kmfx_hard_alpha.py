@@ -1,7 +1,5 @@
 import fx
 from fx import *
-from PySide2 import QtCore, QtWidgets, QtGui
-
 
 class KMFX_hard_Alpha(Action):
 	"""creates a combo of nodes to setup a hard alpha"""
