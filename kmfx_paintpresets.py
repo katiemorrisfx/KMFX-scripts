@@ -183,11 +183,14 @@ class KMFXpaintPresets(Action):
 					loadedpresets = []
 					if result != None:
 						for i in range(0,10):
+							fx.paint.preset = i
 							try:
+								node.setState("preset"+str(i),None)
+
 								with open(paint_presets_path+"/"+result["list"]+"/"+result["list"]+"_"+str(i)+'.json') as complex_data:
 									data = complex_data.read()
 									b = json.loads(data, cls=GenericJSONDecoder)
-									fx.paint.preset = i
+									
 									for ii in b.keys():
 										fx.paint.setState(ii,b[ii])
 									fx.paint.savePreset(i)
@@ -196,6 +199,7 @@ class KMFXpaintPresets(Action):
 
 							except:
 								pass
+
 						fx.paint.preset = min(loadedpresets) ## loads the first available preset
 								# e = sys.exc_info()
 								# print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
