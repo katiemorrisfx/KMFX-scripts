@@ -8,14 +8,21 @@ Steps:
 3. To load in saved presets, press "2" on the numeric keypad to bring up the gui that has the List of
 possible presets that can be loaded in.
 
-Note: By default Presets are saved in folders named with the saved preset name in the "paint_presets" folder inside of KMFX scripts. 
+Note: By default presets are saved in folders named with the saved preset name in the "paint_presets" folder inside of KMFX scripts. 
 
+Current limitation: If a preset group is loaded into a Paint node where a previous paint preset group was already loaded in and the configuration and/or number of presets
+differs between the preset groups, there could be some intermingling of presets.  For, example: Node has presets 1,2,3,4.  A saved preset group
+that will be loaded has only 5,6,7,8.  If you load this group then the Node will have the existing 1,2,3,4 and the new ones 5,6,7,8. Another example: 
+Node has presets 1,2,3.  A saved preset group that will be loaded has 1 and 3.  If you load this group then the Node will have the existing 2, and new
+1 and 3.
+
+Workaround:  make preset groups with the same number of presets, using the same preset numbers
 
 ## Preferences
 
 (Silhouette > Preferences > KMFX)
 
-Note: We are still tweaking the optional path feature, so stay tuned!
+Note: We are still tweaking the optional path feature.  Saving and loading should be possible, but in some instances, loading does not happen.
 
 There is also an option to save the preset to a specified folder, inside of KMFX Preferences.
 

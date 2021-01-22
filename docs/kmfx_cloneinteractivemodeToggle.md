@@ -4,11 +4,12 @@ This script allows you to turn off the Interactive on-screen controls with a hot
 the Interactive button in the Clone tab window.
 
 Steps: 
-1. Press assigned keybind to enter into the Onion Skin mode, enable Interactive mode and the Interactive on-screen controls
-2. Make adjustments
-3. Press assigned keybind to leave Interactive mode and disable the Interactive on-screen controls
-4. Press Caps Lock to disable Onion Skin mode
-5. Paint
+1. Press Caps Lock
+2. Press assigned keybind to enter into the Onion Skin mode, enable Interactive mode and the Interactive on-screen controls
+3. Make adjustments
+4. Press assigned keybind to leave Interactive mode and disable the Interactive on-screen controls
+5. Press Caps Lock to disable Onion Skin mode
+6. Paint
 
 Note: While using the assigned keybind, the Interactive button in the Clone tab window will not become highlighted.
 
