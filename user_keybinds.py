@@ -9,36 +9,45 @@ def callMethod(func, *args, **kwargs):
     return _return_func
 
 #########################################
-print("KM user keybinds loaded")
-
-
-#### start reshape override ####
-fx.unbind("r")
-fx.viewer.setToolBind("Reshape", "")
-fx.bind("r", callMethod(fx.actions["KMFXreshapeOverride"].execute))
-### end reshape override ####
+fx.prefs.add("KMFX.Disable KMFX Keybinds",False)
 
 
 
-fx.bind("Alt+o", callMethod(fx.actions["KMFXkeyframeVisibility"].execute,**{"mode":"default"}))
-fx.bind("Alt+Shift+o", callMethod(fx.actions["KMFXkeyframeVisibility"].execute,**{"mode":"singleframe"}))
 
-fx.bind("i", callMethod(fx.actions["KMFXcloneinteractivemodeToggle"].execute))
+if fx.prefs["KMFX.Disable KMFX Keybinds"] == False:
+
+	#### start reshape override ####
+	fx.unbind("r")
+	fx.viewer.setToolBind("Reshape", "")
+	fx.bind("r", callMethod(fx.actions["KMFXreshapeOverride"].execute))
+	### end reshape override ####
 
 
-fx.bind("5", callMethod(fx.actions["KMFXcycleRGBchannels"].execute))
-fx.bind("6", callMethod(fx.actions["KMFXtimeOffset"].execute))
 
-fx.bind("Num+0", callMethod(fx.actions["KMFXresetCloneOverride"].execute))
+	fx.bind("Alt+o", callMethod(fx.actions["KMFXkeyframeVisibility"].execute,**{"mode":"default"}))
+	fx.bind("Alt+Shift+o", callMethod(fx.actions["KMFXkeyframeVisibility"].execute,**{"mode":"singleframe"}))
 
-fx.bind("Num+1", callMethod(fx.actions["KMFXpaintPresets"].execute,**{"mode":"save"}))
-fx.bind("Num+2", callMethod(fx.actions["KMFXpaintPresets"].execute,**{"mode":"load"}))
+	fx.bind("i", callMethod(fx.actions["KMFXcloneinteractivemodeToggle"].execute))
 
-fx.bind("v", callMethod(fx.actions["KMFXselectAllPointRebind"].execute))
-fx.bind("TAB", callMethod(fx.actions["KMFXcyclePaintPresets"].execute))
 
-fx.bind('1', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"decrease"}))
-fx.bind('2', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"increase"}))
+	fx.bind("5", callMethod(fx.actions["KMFXcycleRGBchannels"].execute))
+	fx.bind("6", callMethod(fx.actions["KMFXtimeOffset"].execute))
+
+	fx.bind("Num+0", callMethod(fx.actions["KMFXresetCloneOverride"].execute))
+
+	fx.bind("Num+1", callMethod(fx.actions["KMFXpaintPresets"].execute,**{"mode":"save"}))
+	fx.bind("Num+2", callMethod(fx.actions["KMFXpaintPresets"].execute,**{"mode":"load"}))
+
+	fx.bind("v", callMethod(fx.actions["KMFXselectAllPointRebind"].execute))
+	fx.bind("TAB", callMethod(fx.actions["KMFXcyclePaintPresets"].execute))
+
+	fx.bind('1', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"decrease"}))
+	fx.bind('2', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"increase"}))
+
+	print("KM user keybinds loaded")
+else:
+	print("KM user keybinds disabled - check preferences")
+
 
 
 
