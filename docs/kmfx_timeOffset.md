@@ -17,9 +17,8 @@ Steps: One of two methods, and the example here is if 10 frames have been added 
 
 
 ## Video Example
-Coming soon
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=aYSGDXyM6oo" target="_blank"><img src="http://img.youtube.com/vi/aYSGDXyM6oo/mqdefault.jpg"
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ceFWqaNTBts" target="_blank"><img src="http://img.youtube.com/vi/ceFWqaNTBts/mqdefault.jpg"
 alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 

@@ -8,9 +8,8 @@ using a hotkey shortcut, cycling between R, G, B and RGB with each press of the 
 
 
 ## Video Example
-Coming soon
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=aYSGDXyM6oo" target="_blank"><img src="http://img.youtube.com/vi/aYSGDXyM6oo/mqdefault.jpg"
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=mHTDjXA5wGE" target="_blank"><img src="http://img.youtube.com/vi/mHTDjXA5wGE/mqdefault.jpg"
 alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 

@@ -18,9 +18,8 @@ Note: While using the assigned keybind, the Interactive button in the Clone tab 
 
 
 ## Video Example
-Coming soon
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=aYSGDXyM6oo" target="_blank"><img src="http://img.youtube.com/vi/aYSGDXyM6oo/mqdefault.jpg"
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=wAVSQAQjdY4" target="_blank"><img src="http://img.youtube.com/vi/wAVSQAQjdY4/mqdefault.jpg"
 alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 

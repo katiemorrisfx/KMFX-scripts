@@ -14,9 +14,8 @@ back to the Paint node, Subpixel is subsequently disabled again.
 
 
 ## Video Example
-Coming soon
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=aYSGDXyM6oo" target="_blank"><img src="http://img.youtube.com/vi/aYSGDXyM6oo/mqdefault.jpg"
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=2wQw3alWi9U" target="_blank"><img src="http://img.youtube.com/vi/2wQw3alWi9U/mqdefault.jpg"
 alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 

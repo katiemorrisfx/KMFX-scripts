@@ -10,9 +10,8 @@ You can edit the script to add additional paths, default is 2 extra paths.
 
 
 ## Video Example
-Coming soon
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=aYSGDXyM6oo" target="_blank"><img src="http://img.youtube.com/vi/aYSGDXyM6oo/mqdefault.jpg"
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=hb5Wr5G4dc0" target="_blank"><img src="http://img.youtube.com/vi/hb5Wr5G4dc0/mqdefault.jpg"
 alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 

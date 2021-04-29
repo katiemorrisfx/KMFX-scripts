@@ -26,9 +26,8 @@ Note: We are still tweaking the optional path feature.  Saving and loading shoul
 
 
 ## Video Example
-Coming soon
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=aYSGDXyM6oo" target="_blank"><img src="http://img.youtube.com/vi/aYSGDXyM6oo/mqdefault.jpg"
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=9xNt4gf3qeo" target="_blank"><img src="http://img.youtube.com/vi/9xNt4gf3qeo/mqdefault.jpg"
 alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 
