@@ -6,6 +6,7 @@ import os
 from fx import *
 
 fx.prefs.add("KMFX.Paint Presets Path", "")
+fx.prefs.add("KMFX.Paint Presets Save Warning", True)
 
 
 class GenericJSONEncoder(json.JSONEncoder):
@@ -108,7 +109,15 @@ class KMFXpaintPresets(Action):
                 paint_presets_path = os.environ["SFX_SCRIPT_PATH"] + \
                     "/KMscripts/paint_presets/"
 
-        mode = kwargs["mode"] if "mode" in kwargs.keys() else "save"
+        if fx.prefs["KMFX.Paint Presets Save Warning"] is True:
+            displayWarning("Please be aware that this script will save your project everytime you run it\nThis message will be show only once", title="KMFX Paint Presets")
+            fx.prefs["KMFX.Paint Presets Save Warning"] = False
+
+        mode = kwargs["mode"] if "mode" in kwargs.keys() else None
+
+        if mode is None:  # it was run from the menu, so display options
+            result = askQuestion("Choose you action", title="KMFX Paint Presets", okText="Load Presets", cancelText="Save Presets")
+            mode = "load" if result is True else "save"
 
         node = activeNode()
 
@@ -124,7 +133,7 @@ class KMFXpaintPresets(Action):
 
                 fname = {"id": "fname", "label": "Filename",
                          "value": "Default"}
-                result = getInput(fields=[fname])
+                result = getInput(title="KMFX Paint Presets", msg="Save Paint Presets",fields=[fname])
                 current = fx.paint.preset
                 override = False
 
@@ -190,7 +199,7 @@ class KMFXpaintPresets(Action):
                     lista = {"id": "list", "label": "List",
                              "value": namecollection[0],
                              "items": namecollection}
-                    result = getInput(fields=[lista])
+                    result = getInput(title="KMFX Paint Presets", msg="Load Paint Presets", fields=[lista])
                     loadedpresets = []
                     if result is not None:
                         for i in range(0, 10):
