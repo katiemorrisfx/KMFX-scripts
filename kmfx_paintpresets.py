@@ -110,13 +110,13 @@ class KMFXpaintPresets(Action):
                     "/KMscripts/paint_presets/"
 
         if fx.prefs["KMFX.Paint Presets Save Warning"] is True:
-            displayWarning("Please be aware that this script will save your project everytime you run it\nThis message will be show only once", title="KMFX Paint Presets")
+            displayWarning("Please be aware that this script will save your project everytime you run it\nThis message will be shown only once", title="KMFX Paint Presets")
             fx.prefs["KMFX.Paint Presets Save Warning"] = False
 
         mode = kwargs["mode"] if "mode" in kwargs.keys() else None
 
         if mode is None:  # it was run from the menu, so display options
-            result = askQuestion("Choose you action", title="KMFX Paint Presets", okText="Load Presets", cancelText="Save Presets")
+            result = askQuestion("Choose your action", title="KMFX Paint Presets", okText="Load Presets", cancelText="Save Presets")
             mode = "load" if result is True else "save"
 
         node = activeNode()

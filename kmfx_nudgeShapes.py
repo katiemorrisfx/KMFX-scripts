@@ -20,12 +20,20 @@ class KMFXnudgeShapes(Action):
         session_size = session.size
         shapes = getObjects(selection(), types=[Shape])
 
-
         optype = kwargs["mode"] if "mode" in kwargs.keys() else "TL"
-        multiplier = kwargs["modifier"] if "modifier" in kwargs.keys() else 1
 
-        mx = {"L": -1, "T": 0, "R": 1, "B": 0, "BL": -1, "TL": -1, "TR": 1, "BR": 1}
-        my = {"L": 0, "T": -1, "R": 0, "B": 1, "BL": 1, "TL": -1, "TR": -1, "BR": 1}
+        multiplier = kwargs["modifier"] if "modifier" in kwargs.keys(
+        ) else fx.prefs["nudging.distance"]
+
+        if multiplier == "shift":
+            multiplier = fx.prefs["nudging.extendedDistance"]
+        elif multiplier == "ctrl":
+            multiplier = fx.prefs["nudging.ctrlDistance"]
+
+        mx = {"L": -1, "T": 0, "R": 1, "B": 0,
+              "BL": -1, "TL": -1, "TR": 1, "BR": 1}
+        my = {"L": 0, "T": -1, "R": 0, "B": 1,
+              "BL": 1, "TL": -1, "TR": -1, "BR": 1}
 
         actualframe = player.frame
         for shape in shapes:
@@ -34,8 +42,9 @@ class KMFXnudgeShapes(Action):
             pathEditor = PropertyEditor(pathProp)
             path = shape.evalPath(actualframe)
             matrix = Matrix()
-            matrix.translate(1/session.size[0]/fx.viewer.zoom*mx[optype]*multiplier, 1/session.size[1]/fx.viewer.zoom*my[optype]*multiplier)
-            path.transform(matrix,selected=selectedpoints)
+            matrix.translate(1/session.size[0]/fx.viewer.zoom*mx[optype]*multiplier,
+                             1/session.size[1]/fx.viewer.zoom*my[optype]*multiplier)
+            path.transform(matrix, selected=selectedpoints)
             pathEditor.setValue(path, actualframe)
             pathEditor.execute()
 
