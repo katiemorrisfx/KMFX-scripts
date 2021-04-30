@@ -17,8 +17,10 @@ can collaborate further.
 #### Installation:
 To install the KMFX scripts you should watch this video:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=xIblP5u2fKs" target="_blank"><img src="http://img.youtube.com/vi/xIblP5u2fKs/mqdefault.jpg"
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Wf5hvdofqkk" target="_blank"><img src="http://img.youtube.com/vi/Wf5hvdofqkk/mqdefault.jpg"
 alt="Click to Watch the video" width="240" height="135" border="10" /></a>
+
+
 
 #### Documentation for each script (wip)
 
