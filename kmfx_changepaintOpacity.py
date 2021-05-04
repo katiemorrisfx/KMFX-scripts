@@ -11,8 +11,11 @@ class KMFXchangepaintOpacity(Action):
 
     def available(self):
         node = fx.activeNode()
-        assert node.isType(
-            "PaintNode") and node is not None, "Paint node not active"
+        try:
+            assert node.isType(
+                "PaintNode") and node is not None, "Paint node not active"
+        except Exception:
+            pass
 
     def execute(self, **kwargs):
         beginUndo("KMFX|Change Paint Opacity")

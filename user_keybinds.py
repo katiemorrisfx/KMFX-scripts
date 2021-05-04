@@ -33,8 +33,8 @@ if fx.prefs["KMFX.Disable KMFX Keybinds"] is False:
 
     fx.bind("Num+0", callMethod(fx.actions["KMFXresetCloneOverride"].execute))
 
-    # fx.bind("Num+1", callMethod(fx.actions["KMFXpaintPresets"].execute, **{"mode": "save"}))
-    # fx.bind("Num+2", callMethod(fx.actions["KMFXpaintPresets"].execute, **{"mode": "load"}))
+    fx.bind("Num+1", callMethod(fx.actions["KMFXpaintPresets"].execute, **{"mode": "save"}))
+    fx.bind("Num+2", callMethod(fx.actions["KMFXpaintPresets"].execute, **{"mode": "load"}))
 
     fx.bind("v", callMethod(fx.actions["KMFXselectAllPointRebind"].execute))
     fx.bind("TAB", callMethod(fx.actions["KMFXcyclePaintPresets"].execute))
@@ -44,14 +44,14 @@ if fx.prefs["KMFX.Disable KMFX Keybinds"] is False:
     fx.bind('2', callMethod(
         fx.actions["KMFXchangepaintOpacity"].execute, **{"mode": "increase"}))
 
-    fx.bind("Num+1", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "BL"}))
+    # fx.bind("Num+1", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "BL"}))
     fx.bind("Num+3", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "BR"}))
     fx.bind("Num+7", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "TL"}))
     fx.bind("Num+9", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "TR"}))
     fx.bind("Num+8", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "T"}))
     fx.bind("Num+6", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "R"}))
     fx.bind("Num+4", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "L"}))
-    fx.bind("Num+2", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "B"}))
+    # fx.bind("Num+2", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "B"}))
 
     fx.bind("Shift+Num+1", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "BL", "modifier": "shift"}))
     fx.bind("Shift+Num+3", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "BR", "modifier": "shift"}))
