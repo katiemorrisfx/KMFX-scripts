@@ -17,6 +17,11 @@ can collaborate further.
 #### Installation:
 To install the KMFX scripts you should watch this video:
 
+Silhouette 2021:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=XLAOcbv5IhI" target="_blank"><img src="http://img.youtube.com/vi/XLAOcbv5IhI/mqdefault.jpg"
+alt="Click to Watch the video" width="240" height="135" border="10" /></a>
+
+Silhouette 2020:
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Wf5hvdofqkk" target="_blank"><img src="http://img.youtube.com/vi/Wf5hvdofqkk/mqdefault.jpg"
 alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
