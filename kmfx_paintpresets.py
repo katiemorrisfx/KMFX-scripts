@@ -226,7 +226,8 @@ class KMFXpaintPresets(Action):
                             # print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 
             else:
-                print("no active Paint node selected")# fx.endUndo()  # undo is not working on this
+                print("no active Paint node selected")
+            # fx.endUndo()  # undo is not working on this
 
 
 addAction(KMFXpaintPresets())
