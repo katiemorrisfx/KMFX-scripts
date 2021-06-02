@@ -27,7 +27,7 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 
 
-#### Documentation for each script (wip)
+#### Documentation for each script
 
 [kmfx_changepaintOpacity](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_changepaintOpacity.md)<br>
 [kmfx_cloneinteractivemodeToggle](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cloneinteractivemodeToggle.md) <br>
@@ -36,6 +36,7 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 [kmfx_extrascriptspath](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_extrascriptspath.md) <br>
 [kmfx_hard_alpha](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_hard_alpha.md) <br>
 [kmfx_keyframeVisibility](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_keyframeVisibility.md) <br>
+[kmfx_nudgeShapes](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_nudgeShapes.md) <br>
 [kmfx_paintpresets](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintpresets.md) <br>
 [kmfx_paintsubpixeloff](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintsubpixeloff.md) <br>
 [kmfx_resetcloneoverride](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_resetcloneoverride.md) <br>
@@ -43,6 +44,7 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 [kmfx_selectallpoints](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_selectallpoints.md)<br>
 [kmfx_timeOffset](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_timeOffset.md)<br>
 
+[Customizing KMFX user keybinds](https://www.youtube.com/watch?v=XHGWHKoXkWA)
 
 #### Resources:
 - [SFX User Guide](https://cdn.borisfx.com/borisfx/store/silhouette/2020-5-7/Silhouette-2020.5.7-UserGuide.pdf)
