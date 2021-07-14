@@ -71,6 +71,9 @@ if fx.prefs["KMFX.Disable KMFX Keybinds"] is False:
     fx.bind("Ctrl+Num+4", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "L", "modifier": "ctrl"}))
     fx.bind("Ctrl+Num+2", callMethod(fx.actions["KMFXnudgeShapes"].execute, **{"mode": "B", "modifier": "ctrl"}))
 
+#    fx.bind("Ctrl+1", callMethod(fx.actions["KMFXalphaOverlayColor"].execute, **{"color": (0, 0, 0)})) #rgb values for black
+#    fx.bind("Ctrl+2", callMethod(fx.actions["KMFXalphaOverlayColor"].execute, **{"color": (1, 1, 1)})) #rgb values for white
+
     print("KM user keybinds loaded")
 else:
     print("KM user keybinds disabled - check preferences")
