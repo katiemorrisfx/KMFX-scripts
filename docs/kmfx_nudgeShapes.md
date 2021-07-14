@@ -1,12 +1,12 @@
 ## KMFX_nudgeShapes Documentation
 
-This script allows you to nudge Shapes and Shapes Points with the numeric keypad (up, down, left, right and diagonals)
-Nudge modifiers are set up on regular Silhouette Preferences > Nudge
+This script allows you to nudge Shapes and Shape Points with the numeric keypad (up, down, left, right and diagonals)
+Nudge modifiers are set up in the regular Silhouette Preferences > Nudging
 
 Steps:
 1. Select shapes or shape points
-2. Press "1" to "9"  on the numeric keypad move. Hold Shift or Ctrol for nudge modiers.<br>
-"1","3","7","9" move diagonally.
+2. Press "1" to "9" on the numeric keypad to move. Hold Shift or Ctrl for nudge modifiers.<br>
+"1", "3", "7", "9" move diagonally.
 
 
 

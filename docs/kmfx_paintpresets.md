@@ -4,9 +4,9 @@ This script allows you save and load paint presets with the assigned keybinds.
 
 Steps:
 1. While in a Paint node, make and save any number of paint presets in the Presets tab in the Paint window.
-2. From KMFX menu, select Paint Presets (or use the keybinds Alt+1 (save), Alt+2 (load) on numeric keypad)
+2. From KMFX menu, select Paint Presets (or use the keybinds Alt+1 (save), Alt+2 (load) on the numeric keypad)
 
-You *must* setup the Paint Presets save folder on KMFX preferences.
+You *must* set up the "Paint Presets Path" folder in KMFX preferences to designate a place to save your presets.
 
 
 ## Preferences
@@ -17,7 +17,7 @@ There is also an option to save the preset to a specified folder, inside of KMFX
 
 You can share your presets with other users or move them to another computer, just copy the whole presets folder to the new location.
 
-- Can be run from KMFX menu: Yes
+- Can be run from KMFX menu: YES
 - Can be run from keybind: YES
 
 
