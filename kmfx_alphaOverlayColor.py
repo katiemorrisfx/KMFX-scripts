@@ -29,6 +29,9 @@ class KMFXalphaOverlayColor(Action):
             AOcolor = self.fxcolor_to_qcolor(fx.prefs["viewer.alphaColor"])
             self.AObtn.setStyleSheet(
                     "background-color: {}".format(AOcolor.name()))
+        else:
+            self.updateColor()
+
 
     def updateColor(self):
         # print(self.AObtn)
