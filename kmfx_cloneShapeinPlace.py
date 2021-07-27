@@ -23,19 +23,11 @@ class KMFXcloneShapeinPlace(Action):
         Action.__init__(self, "KMFX|Clone Shapes in Place")
 
     def available(self):
-        node = activeNode()
-        session = activeSession()
-        assert session, "Select a Session"
-        rotoNode = session.node(type="RotoNode")
-        assert rotoNode, "The session does not contain a Roto Node"
-        activelayer = activeLayer()
-        assert activelayer != None, "Activate the destinationn Layer"
         shapes = getObjects(selection(), types=[Shape])
         assert len(shapes) > 0, "There must be one or more selected shapes"
 
     def execute(self,deletekeys=True,propertiesList=["opacity"]):
         beginUndo("KMFX Clone Shapes in Place") 
-
         shapes = getObjects(selection(), types=[Shape])
         activelayer = activeLayer()
         
