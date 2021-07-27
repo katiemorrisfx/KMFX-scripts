@@ -3,11 +3,11 @@ from fx import *
 from tools.objectIterator import getObjects
 
 
-class KMFXcopypasteKeyframe(Action):
+class KMFXcopyShapeKeyframe(Action):
     """copy paste path keyframes"""
 
     def __init__(self):
-        Action.__init__(self, "KMFX|Copy Paste Shapes Keyframes")
+        Action.__init__(self, "KMFX|Shape Keyframe Copy")
         self.savedkeys = {}
         self.from_action_menu = "copy"
 
@@ -22,12 +22,11 @@ class KMFXcopypasteKeyframe(Action):
         if len(shapes) > 0:
             optype = kwargs["mode"] if "mode" in kwargs.keys() else self.from_action_menu
 
-            beginUndo("KMFX Copy Paste Shape Keyframe")
-            actualframe = player.frame
-
             if optype == "copy":
                 self.savedkeys = {} ## start with fresh dict
 
+            beginUndo("KMFX Shape Keyframe Paste")
+            actualframe = player.frame
 
             for shape in shapes:
                 path = shape.property("path")
@@ -44,10 +43,10 @@ class KMFXcopypasteKeyframe(Action):
                 status("KMFX: copied select shapes keyframes")       
 
             #alternating the actions if run from action menu
-            self.from_action_menu = "paste" if self.from_action_menu == "copy" else "copy"
+            # self.from_action_menu = "paste" if self.from_action_menu == "copy" else "copy"
             endUndo()
         else:
             status("KMFX: no shapes selected")
 
 
-addAction(KMFXcopypasteKeyframe())
+addAction(KMFXcopyShapeKeyframe())
