@@ -1,13 +1,15 @@
 import fx
 from fx import *
 from tools.objectIterator import getObjects
+fx.prefs.add("KMFX_Load.Keyframe Visibility", True)
 
 
 class KMFXkeyframeVisibility(Action):
     """Creates keyframes without clicking on the visibility icon"""
 
     def __init__(self):
-        Action.__init__(self, "KMFX|Keyframe Visibility")
+        if fx.prefs["KMFX_Load.Keyframe Visibility"] is True:
+            Action.__init__(self, "KMFX|Keyframe Visibility")
 
     def available(self):
         shapes = getObjects(selection(), types=[Shape])

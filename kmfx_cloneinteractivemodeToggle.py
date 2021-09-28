@@ -1,13 +1,15 @@
 import fx
 from fx import *
 clonemode = None
+fx.prefs.add("KMFX_Load.Clone Interactive Toggle", True)
 
 
 class KMFXcloneinteractivemodeToggle(Action):
     """shortcut to enable interactive mode if onion skin is active"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Clone Interactive Toggle On/Off")
+        if fx.prefs["KMFX_Load.Clone Interactive Toggle"] is True:
+            Action.__init__(self, "KMFX|Clone Interactive Toggle On/Off")
 
     def available(self):
         assert fx.viewer.toolName == "Clone", "Clone tool only"

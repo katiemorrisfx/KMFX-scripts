@@ -1,16 +1,17 @@
 import fx
 from fx import *
 from tools.objectIterator import getObjects
+fx.prefs.add("KMFX_Load.Shape Keyframe Copy", True)
 
 
 class KMFXcopyShapeKeyframe(Action):
     """copy paste path keyframes"""
 
     def __init__(self):
-        Action.__init__(self, "KMFX|Shape Keyframe Copy")
-        self.savedkeys = {}
-        self.from_action_menu = "copy"
-
+        if fx.prefs["KMFX_Load.Shape Keyframe Copy"] is True:
+            Action.__init__(self, "KMFX|Shape Keyframe Copy")
+            self.savedkeys = {}
+            self.from_action_menu = "copy"
 
     def available(self):
         shapes = getObjects(selection(), types=[Shape])

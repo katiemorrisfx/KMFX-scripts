@@ -1,5 +1,6 @@
 import fx
 from fx import *
+fx.prefs.add("KMFX_Load.Change Paint Opacity", True)
 
 
 class KMFXchangepaintOpacity(Action):
@@ -7,7 +8,8 @@ class KMFXchangepaintOpacity(Action):
     """shortcuts to increase/decrease opacity when using paint node"""
 
     def __init__(self):
-        Action.__init__(self, "KMFX|Change Paint Opacity")
+        if fx.prefs["KMFX_Load.Change Paint Opacity"] is True:
+            Action.__init__(self, "KMFX|Change Paint Opacity")
 
     def available(self):
         node = fx.activeNode()

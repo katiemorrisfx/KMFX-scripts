@@ -1,13 +1,15 @@
 import fx
 from fx import *
 from tools.objectIterator import getObjects
+fx.prefs.add("KMFX_Load.Node Time Offset", True)
 
 
 class KMFXtimeOffset(Action):
     """Offsets keyframes on selected nodes"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Node Time Offset")
+        if fx.prefs["KMFX_Load.Node Time Offset"] is True:
+            Action.__init__(self, "KMFX|Node Time Offset")
 
     def available(self):
         assert fx.selection() != [], "Select some nodes"

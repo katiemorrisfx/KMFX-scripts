@@ -3,13 +3,15 @@ import sys
 from fx import *
 
 fx.prefs.add("KMFX.Paint Presets maximum cycle", 4, min=2, max=10)
+fx.prefs.add("KMFX_Load.Cycle Paint Presets", True)
 
 
 class KMFXcyclePaintPresets(Action):
     """You can cycle your paint presets with a keybind"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Cycle Paint Presets")
+        if fx.prefs["KMFX_Load.Cycle Paint Presets"] is True:
+            Action.__init__(self, "KMFX|Cycle Paint Presets")
 
     def available(self):
         node = fx.activeNode()

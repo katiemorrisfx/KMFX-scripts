@@ -4,21 +4,23 @@ from PySide2 import QtCore, QtGui
 from PySide2.QtCore import *
 from PySide2.QtWidgets import QLabel
 import sys
-# import shiboken2
 from fx import *
 
 fx.prefs.add("KMFX.Alpha Overlay Color UI", True)
+fx.prefs.add("KMFX_Load.Alpha Overlay Color UI", True)
+
 
 class KMFXalphaOverlayColor(Action):
     """allows to change the alpha overlay color with UI item and shortcuts"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Alpha Overlay Color")
-        if fx.prefs["KMFX.Alpha Overlay Color UI"]:
-            self.AObtn = self.get_widgets()
-            AOcolor = self.fxcolor_to_qcolor(fx.prefs["viewer.alphaColor"])
-            self.AObtn.setStyleSheet(
-                "background-color: {}".format(AOcolor.name()))
+        if fx.prefs["KMFX_Load.Alpha Overlay Color UI"] is True:                
+            Action.__init__(self, "KMFX|Alpha Overlay Color")
+            if fx.prefs["KMFX.Alpha Overlay Color UI"]:
+                self.AObtn = self.get_widgets()
+                AOcolor = self.fxcolor_to_qcolor(fx.prefs["viewer.alphaColor"])
+                self.AObtn.setStyleSheet(
+                    "background-color: {}".format(AOcolor.name()))
 
     def available(self):
         pass  

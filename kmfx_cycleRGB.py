@@ -2,13 +2,15 @@ import fx
 from fx import *
 cycleRGB = None
 previousRGB = None
+fx.prefs.add("KMFX_Load.Cycle RGB channels", True)
 
 
 class KMFXcycleRGBchannels(Action):
     """Overrides shortcuts to cycle rgb modes using a single key shortcut"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Cycle RGB channels")
+        if fx.prefs["KMFX_Load.Cycle RGB channels"] is True:
+            Action.__init__(self, "KMFX|Cycle RGB channels")
 
     def available(self):
         pass

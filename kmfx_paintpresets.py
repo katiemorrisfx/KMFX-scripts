@@ -4,7 +4,7 @@ import json
 import glob
 import os
 from fx import *
-
+fx.prefs.add("KMFX_Load.Paint Presets", True)
 fx.prefs.add("KMFX.Paint Presets Path", "")
 fx.prefs.add("KMFX.Paint Presets Save Warning", True)
 
@@ -89,7 +89,8 @@ class KMFXpaintPresets(Action):
     """this will save/load the actual state of the paint node to/from disk"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Paint Presets")
+        if fx.prefs["KMFX_Load.Paint Presets"] is True:
+            Action.__init__(self, "KMFX|Paint Presets")
 
     def available(self):
         pass  # verification on execution

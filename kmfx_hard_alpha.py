@@ -1,12 +1,14 @@
 import fx
 from fx import *
+fx.prefs.add("KMFX_Load.Paint Hard Alpha setup", True)
 
 
 class KMFX_hard_Alpha(Action):
     """creates a combo of nodes to setup a hard alpha"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Paint Hard Alpha setup")
+        if fx.prefs["KMFX_Load.Paint Hard Alpha setup"] is True:
+            Action.__init__(self, "KMFX|Paint Hard Alpha setup")
 
     def available(self):
         assert fx.selection() != [], "Select some nodes"

@@ -1,16 +1,15 @@
 import fx
 from fx import *
-
-
 fx.prefs.add("KMFX.Reset Clone also resets opacity", True)
-
+fx.prefs.add("KMFX_Load.Clone Reset transforms and frame", True)
 
 class KMFXresetCloneOverride(Action):
     """replicates the behavior the clone tool
     "reset button",resets clone frame as well"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Clone Reset transforms and frame")
+        if fx.prefs["KMFX_Load.Clone Reset transforms and frame"] is True:
+            Action.__init__(self, "KMFX|Clone Reset transforms and frame")
 
     def available(self):
         assert fx.viewer.toolName == "Clone", "Clone tool only"

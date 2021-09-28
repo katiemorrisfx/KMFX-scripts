@@ -1,13 +1,14 @@
 import fx
 from fx import *
 reshapeOverridestore = True
-
+fx.prefs.add("KMFX_Load.Reshape Tool Override", True)
 
 class KMFXreshapeOverride(Action):
     """Overrides the reshape tool binding to avoid the magnet reshape tool"""
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Reshape Tool Override")
+        if fx.prefs["KMFX_Load.Reshape Tool Override"] is True:
+            Action.__init__(self, "KMFX|Reshape Tool Override")
 
     def available(self):
         pass

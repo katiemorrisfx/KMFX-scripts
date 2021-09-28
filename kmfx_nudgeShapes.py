@@ -1,13 +1,15 @@
 import fx
 from fx import *
 from tools.objectIterator import getObjects
+fx.prefs.add("KMFX_Load.Nudge Shape Shortcuts", True)
 
 
 class KMFXnudgeShapes(Action):
     """move shapes with keyboard shortcuts """
 
     def __init__(self,):
-        Action.__init__(self, "KMFX|Nudge Shape Shortcuts")
+        if fx.prefs["KMFX_Load.Nudge Shape Shortcuts"] is True:
+            Action.__init__(self, "KMFX|Nudge Shape Shortcuts")
 
     def available(self):
         shapes = getObjects(selection(), types=[Shape])

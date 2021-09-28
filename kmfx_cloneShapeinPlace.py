@@ -2,6 +2,8 @@ import fx
 from fx import *
 from tools.objectIterator import getObjects
 from tools.objectIterator import ObjectFinder
+fx.prefs.add("KMFX_Load.Clone Shapes in Place", True)
+
 
 def remove_keys(shape,propertiesList):
     for prop in propertiesList:
@@ -13,14 +15,14 @@ def remove_keys(shape,propertiesList):
                 editor.deleteKey(t)
         editor.execute()
         propertie.constant = True
-    
 
 
 class KMFXcloneShapeinPlace(Action):
     """Copy shapes to an Active Layer on a given frame,removing all keyframes."""
 
     def __init__(self):
-        Action.__init__(self, "KMFX|Clone Shapes in Place")
+        if fx.prefs["KMFX_Load.Clone Shapes in Place"] is True:
+            Action.__init__(self, "KMFX|Clone Shapes in Place")
 
     def available(self):
         shapes = getObjects(selection(), types=[Shape])

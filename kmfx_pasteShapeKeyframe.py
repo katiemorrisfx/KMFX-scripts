@@ -1,13 +1,15 @@
 import fx
 from fx import *
 from tools.objectIterator import getObjects
+fx.prefs.add("KMFX_Load.Shape Keyframe Paste", True)
+
 
 class KMFXpasteShapeKeyframe(Action):
     """paste path keyframes, this is just a wrapper so we have this on the Actions menu"""
 
     def __init__(self):
-        Action.__init__(self, "KMFX|Shape Keyframe Paste")
-
+        if fx.prefs["KMFX_Load.Shape Keyframe Paste"] is True:
+            Action.__init__(self, "KMFX|Shape Keyframe Paste")
 
     def available(self):
         shapes = getObjects(selection(), types=[Shape])
