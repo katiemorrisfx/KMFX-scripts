@@ -16,11 +16,12 @@ fx.prefs.add("KMFX.Disable KMFX Keybinds", False)
 
 if fx.prefs["KMFX.Disable KMFX Keybinds"] is False:
 
-    # start reshape override #
-    fx.unbind("r")
-    fx.viewer.setToolBind("Reshape", "")
-    fx.bind("r", callMethod(fx.actions["KMFXreshapeOverride"].execute))
-    # end reshape override #
+    if fx.prefs["KMFX_Load.Reshape Tool Override"] is True:
+        # start reshape override #
+        fx.unbind("r")
+        fx.viewer.setToolBind("Reshape", "")
+        fx.bind("r", callMethod(fx.actions["KMFXreshapeOverride"].execute))
+        # end reshape override #
 
     fx.bind("Alt+o", callMethod(fx.actions["KMFXkeyframeVisibility"].execute, **{"mode": "default"}))
     fx.bind("Alt+Shift+o", callMethod(fx.actions["KMFXkeyframeVisibility"].execute, **{"mode": "singleframe"}))
