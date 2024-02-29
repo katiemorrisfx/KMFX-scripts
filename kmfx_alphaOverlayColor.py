@@ -14,26 +14,27 @@ class KMFXalphaOverlayColor(Action):
     """allows to change the alpha overlay color with UI item and shortcuts"""
 
     def __init__(self,):
-        if fx.prefs["KMFX_Load.Alpha Overlay Color UI"] is True:                
+        if fx.prefs["KMFX_Load.Alpha Overlay Color UI"] is True:
             Action.__init__(self, "KMFX|Alpha Overlay Color")
-            if fx.prefs["KMFX.Alpha Overlay Color UI"]:
-                self.AObtn = self.get_widgets()
-                AOcolor = self.fxcolor_to_qcolor(fx.prefs["viewer.alphaColor"])
-                self.AObtn.setStyleSheet(
-                    "background-color: {}".format(AOcolor.name()))
-
-    def available(self):
-        pass  
-
-    def execute(self, **kwargs):
-        if "color" in kwargs.keys():
-            fx.prefs["viewer.alphaColor"] = Color(kwargs["color"][0],kwargs["color"][1],kwargs["color"][2],fx.prefs["viewer.alphaColor"].a)
+            # if fx.prefs["KMFX.Alpha Overlay Color UI"]:
+            self.AObtn = self.get_widgets()
             AOcolor = self.fxcolor_to_qcolor(fx.prefs["viewer.alphaColor"])
             self.AObtn.setStyleSheet(
-                    "background-color: {}".format(AOcolor.name()))
+                "background-color: {}".format(AOcolor.name()))
+
+    def available(self):
+        pass
+
+    def execute(self, **kwargs):
+
+        if "color" in kwargs.keys():
+            fx.prefs["viewer.alphaColor"] = Color(
+                kwargs["color"][0], kwargs["color"][1], kwargs["color"][2], fx.prefs["viewer.alphaColor"].a)
+            AOcolor = self.fxcolor_to_qcolor(fx.prefs["viewer.alphaColor"])
+            self.AObtn.setStyleSheet(
+                "background-color: {}".format(AOcolor.name()))
         else:
             self.updateColor()
-
 
     def updateColor(self):
         # print(self.AObtn)
@@ -41,8 +42,8 @@ class KMFXalphaOverlayColor(Action):
         if color.isValid():
             self.AObtn.setStyleSheet(
                 "background-color: {}".format(color.name()))
-            fx.prefs["viewer.alphaColor"] = self.qcolor_to_fxcolor(color,fx.prefs["viewer.alphaColor"])
-
+            fx.prefs["viewer.alphaColor"] = self.qcolor_to_fxcolor(
+                color, fx.prefs["viewer.alphaColor"])
 
     def fxcolor_to_qcolor(self, color):
         c = QtGui.QColor()
@@ -58,28 +59,37 @@ class KMFXalphaOverlayColor(Action):
     def get_widgets(self):
         widgets = QtWidgets.QApplication.allWidgets()
         plist = []
+        gammafound = False
         for w in widgets:
+            if gammafound:
+                break
             try:
-                # print(w.parent().layout(), w.parent().layout().count())
-                # to find the correct place (viewer), look for the Gamma label and a QLayout with lots 10+ items
-                if w.parent().layout().count() > 10 and w.parent() not in plist:
-                    plist.append(w.parent())
-                    for n in range(0, w.parent().layout().count()):
-                        try:
-                            x = w.parent().layout().itemAt(n).widget().text()
-                            if x == "Gamma":
-                                btn = QtWidgets.QPushButton("AO")
-                                w.parent().layout().addWidget(btn)
-                                btn.clicked.connect(self.updateColor)
 
-                        except Exception:
-                            # e = sys.exc_info()
-                            # print("EXCEPTION ERROR - line %s, %s %s" % (e[-1].tb_lineno, type(e).__name__, e))
-                            pass
+                # to find the correct place (viewer), look for the Gamma label and a QLayout with lots 10+ items
+                # found out that the layout that holds the target buttons is QHBoxLayout
+                # so by filtering it the "count? WARNING" messages are avoided
+
+                if isinstance(w.parent().layout(),QtWidgets.QHBoxLayout):
+                    if w.parent().layout().count() > 10 and w.parent() not in plist:
+                        plist.append(w.parent())
+                        for n in range(0, w.parent().layout().count()):
+                            try:
+                                x = w.parent().layout().itemAt(n).widget().text()
+                                if x == "Gamma":
+                                    btn = QtWidgets.QPushButton("AO")
+                                    if fx.prefs["KMFX.Alpha Overlay Color UI"]:
+                                        w.parent().layout().addWidget(btn)
+                                    btn.clicked.connect(self.updateColor)
+                                    gammafound = True
+                                    break
+
+                            except Exception:
+                                pass
 
             except Exception:
                 pass
 
         return btn
+
 
 addAction(KMFXalphaOverlayColor())
