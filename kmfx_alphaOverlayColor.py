@@ -17,10 +17,13 @@ class KMFXalphaOverlayColor(Action):
         if fx.prefs["KMFX_Load.Alpha Overlay Color UI"] is True:
             Action.__init__(self, "KMFX|Alpha Overlay Color")
             # if fx.prefs["KMFX.Alpha Overlay Color UI"]:
-            self.AObtn = self.get_widgets()
-            AOcolor = self.fxcolor_to_qcolor(fx.prefs["viewer.alphaColor"])
-            self.AObtn.setStyleSheet(
-                "background-color: {}".format(AOcolor.name()))
+            if not self.existingAObtn():
+
+                self.AObtn = self.get_widgets()
+
+                AOcolor = self.fxcolor_to_qcolor(fx.prefs["viewer.alphaColor"])
+                self.AObtn.setStyleSheet(
+                    "background-color: {}".format(AOcolor.name()))
 
     def available(self):
         pass
@@ -56,6 +59,38 @@ class KMFXalphaOverlayColor(Action):
         b = float(qcolor.blue()/255.0)
         return fx.Color(r, g, b, alpha.a)
 
+
+    def existingAObtn(self):
+        """Checks if the AO button already exists to avoid adding 
+        multiple instances 
+        
+        Returns:
+            TYPE: Boolean
+        """
+        widgets = QtWidgets.QApplication.allWidgets()
+        plist = []
+
+        AOfound = False
+        for w in widgets:
+            if AOfound:
+                break
+            try:
+                if isinstance(w.parent().layout(),QtWidgets.QHBoxLayout):
+                    if w.parent().layout().count() > 10 and w.parent() not in plist:
+                        plist.append(w.parent())
+                        for n in range(0, w.parent().layout().count()):
+                            try:
+                                x = w.parent().layout().itemAt(n).widget().text()
+                                if x == "AO":
+                                    AOfound = True
+                                    break
+                            except Exception:
+                                pass
+            except Exception:
+                pass
+        return AOfound
+
+
     def get_widgets(self):
         widgets = QtWidgets.QApplication.allWidgets()
         plist = []
@@ -68,7 +103,6 @@ class KMFXalphaOverlayColor(Action):
                 # to find the correct place (viewer), look for the Gamma label and a QLayout with lots 10+ items
                 # found out that the layout that holds the target buttons is QHBoxLayout
                 # so by filtering it the "count? WARNING" messages are avoided
-
                 if isinstance(w.parent().layout(),QtWidgets.QHBoxLayout):
                     if w.parent().layout().count() > 10 and w.parent() not in plist:
                         plist.append(w.parent())
