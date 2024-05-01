@@ -1,6 +1,6 @@
 ## KMFX_changepaintOpacity Documentation
 
-This script allows you to increase or decrease the paint opacity using hotkeys when in the Paint Node.
+This script allows you to increase or decrease the paint opacity using hotkeys when in the Paint Node.  For Silhouette versions v2022.5 and upwards.
 
 The decrease keybind ('Num+1' key on the example below) will reduce paint opacity by 10%, and the increase keybind ('Num+2' below) key will increase the paint opacity
 by 10%.
