@@ -1,11 +1,11 @@
 ## KMFX_reshapeOverride Documentation
 
-This script allows you to override the toggling of the Reshape tool with the Magnetic tool (avoiding entering on the Magnetic).  
-Magnetic mode will still be accessible, but you need to click with the mouse on the toolbar.
+This script allows you to override the toggling of the Reshape tool with the Magnetic Reshape tool (avoiding entering on the Magnetic Reshape) and the Brush Reshape tool (avoiding entering on the Brush Reshape).  
+Magnetic Reshape and Brush Reshape mode will still be accessible, but you need to click with the mouse on the toolbar to select them.  For Silhouette versions v2022.5 and upwards.
 
 Steps:
 
-1. When pressing the "r" key in the Roto node it will no longer toggle between the Magnetic tool and will remain in the
+1. When pressing the "r" key in the Roto node it will no longer toggle between the Magnetic Reshape and Brush Reshape tools and will remain in the
 Reshape tool.
 
 
