@@ -1,11 +1,11 @@
 ## KMFX_changepaintOpacity Documentation
 
-This script allows you to increase or decrease the paint opacity using hotkeys.
+This script allows you to increase or decrease the paint opacity using hotkeys when in the Paint Node.
 
-The decrease keybind ('1' key on the example below) will reduce paint opacity by 10%, and the increase keybind ('2' below) key will increase the paint opacity
+The decrease keybind ('Num+1' key on the example below) will reduce paint opacity by 10%, and the increase keybind ('Num+2' below) key will increase the paint opacity
 by 10%.
 
-- Can be run from KMFX menu: NO
+- Can be run from KMFX menu: YES
 - Can be run from keybind: YES
 
 
@@ -17,10 +17,16 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 ## Sample Keybind Command
 ```
-fx.bind('1', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"decrease"})) 
-fx.bind('2', callMethod(fx.actions["KMFXchangepaintOpacity"].execute,**{"mode":"increase"}))
+fx.bind('Num+1', callMethod(fx.actions["KMFXmultikeyAssign"].execute,
+        **{"PaintNode":["KMFXchangepaintOpacity", {"mode": "decrease"}],
+            "RotoNode":["KMFXnudgeShapes", {"mode": "BL"}] 
+            }))
+
+    fx.bind('Num+2', callMethod(fx.actions["KMFXmultikeyAssign"].execute,
+        **{"PaintNode":["KMFXchangepaintOpacity", {"mode": "increase"}],
+            "RotoNode":["KMFXnudgeShapes", {"mode": "B"}] 
+            }))
 ```
 
-Note: The default hotkeys "1" and "2" bindings override Silhouette's Output View "1" and Foreground View "2" hotkeys 
-when in the Paint node.  The hotkeys work on the keyboard, not the numeric keypad. For numeric use "Num+1", "Num+2".
-
+Note: The default hotkeys "Num+1" and "Num+2" bindings override Silhouette's Output View and Foreground View hotkeys 
+when in the Paint node.  
