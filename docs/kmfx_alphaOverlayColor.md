@@ -1,4 +1,4 @@
-## KMFX_keyframeVisibility Documentation
+## KMFX_alphaOverlayColor Documentation
 
 This script add a UI button to change the color of the alpha overlay.  When you click on it it brings up the color picker.  This is for Silhouette versions v 2022.5 and upwards.
 
