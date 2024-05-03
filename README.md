@@ -11,7 +11,7 @@ can collaborate further.
 
 
 #### Supported Platforms:
-- Silhouette 2020.5 or later
+- Silhouette 2022.5 or later
 - Windows, Mac or Linux
 
 #### Installation:
@@ -42,6 +42,7 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 [kmfx_nudgeShapes](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_nudgeShapes.md) <br>
 [kmfx_paintpresets](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintpresets.md) <br>
 [kmfx_paintsubpixeloff](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintsubpixeloff.md) <br>
+[kmfx_pasteShapeKeyframe](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_pasteShapeKeyframe.md) <br>
 [kmfx_resetcloneoverride](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_resetcloneoverride.md) <br>
 [kmfx_reshapeOverride](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_reshapeOverride.md)<br>
 [kmfx_selectallpoints](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_selectallpoints.md)<br>
