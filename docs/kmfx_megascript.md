@@ -11,12 +11,17 @@ Notes:
 
 ## List of Scripts in the megascript:
 
-alphaOverlayColor
-changepaintOpacity
-cloneShapeinPlace
-copyShapeKeyframe
-keyframeVisbility
-pasteShapeKeyframe
-nudgeShapes
-resetcloneoverride
-timeOffset
+ - alphaOverlayColor
+ - changepaintOpacity
+ - cloneShapeinPlace
+ - copyShapeKeyframe
+ - keyframeVisbility
+ - pasteShapeKeyframe
+ - nudgeShapes
+ - resetcloneoverride
+ - timeOffset
+
+## How to comment out a script
+
+- comment the "addAction(" for that  script on the end of the file
+- comment by adding # on the begin of the line
