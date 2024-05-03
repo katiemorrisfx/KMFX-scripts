@@ -39,6 +39,7 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 [kmfx_extrascriptspath](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_extrascriptspath.md) <br>
 [kmfx_hard_alpha](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_hard_alpha.md) <br>
 [kmfx_keyframeVisibility](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_keyframeVisibility.md) <br>
+[kmfx_megascript](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_megascript.md) <br>
 [kmfx_nudgeShapes](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_nudgeShapes.md) <br>
 [kmfx_paintpresets](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintpresets.md) <br>
 [kmfx_paintsubpixeloff](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_paintsubpixeloff.md) <br>
