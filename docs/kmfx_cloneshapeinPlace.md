@@ -1,6 +1,6 @@
 ## KMFX_cloneshapeinPlace Documentation
 
-This script allows one to copy shapes to an active layer on a given frame, removing all keyframes.
+This script allows one to copy shapes to an active layer on a given frame, removing all keyframes.  For Silhouette versions v2022.5 and upwards.
 
 Steps/Notes:
 1. A shape is selected, typically one that has keyframes, then click the hotkey shortcut (Cmd+Shift+D), make sure the layer that the shape is
