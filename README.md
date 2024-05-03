@@ -29,7 +29,7 @@ alt="Click to Watch the video" width="240" height="135" border="10" /></a>
 
 #### Documentation for each script
 
-[kmfx_alphaOverlayColor]:(https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_alphaOverlayColor.md)<br>
+[kmfx_alphaOverlayColor](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_alphaOverlayColor.md)<br>
 [kmfx_changepaintOpacity](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_changepaintOpacity.md)<br>
 [kmfx_cloneinteractivemodeToggle](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cloneinteractivemodeToggle.md) <br>
 [kmfx_cyclePaintPresets](https://github.com/katiemorrisfx/KMFX-scripts/blob/main/docs/kmfx_cyclePaintPresets.md)<br> 
